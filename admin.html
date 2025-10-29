@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin - Miel Atlas</title>
+  <link rel="stylesheet" href="styles/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Tajawal:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    .admin-container { max-width: 960px; margin: 2rem auto; padding: 1rem; }
+    .admin-card { background: #fff; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.08); padding: 1rem; margin-bottom: 1rem; }
+    .admin-grid { display: grid; grid-template-columns: 1fr; gap: 1rem; }
+    .admin-actions { display: flex; gap: .5rem; }
+    .admin-input { width: 100%; padding: .5rem .75rem; border: 1px solid #ddd; border-radius: 6px; }
+    .admin-btn { padding: .5rem .9rem; border: none; border-radius: 6px; background: #28a745; color: #fff; cursor: pointer; }
+    .admin-btn.secondary { background: #007bff; }
+    .admin-btn.danger { background: #dc3545; }
+    .admin-header { display: flex; align-items: center; justify-content: space-between; }
+    .muted { color: #666; font-size: .9rem; }
+  </style>
+  </head>
+<body>
+  <header>
+    <div class="container">
+      <div class="logo">
+        <a href="index.html"><img src="images/honey-label.svg" alt="Miel Atlas" class="logo-img" /> <h1>Miel Atlas</h1></a>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="admin-container">
+      <div id="login-view" class="admin-card">
+        <h2>Connexion Admin</h2>
+        <div>
+          <label>Email</label>
+          <input type="email" id="admin-email" class="admin-input" placeholder="admin@example.com" />
+        </div>
+        <div>
+          <label>Mot de passe</label>
+          <input type="password" id="admin-password" class="admin-input" placeholder="••••••••" />
+        </div>
+        <div style="margin-top: .75rem;">
+          <button id="login-btn" class="admin-btn">Se connecter</button>
+        </div>
+        <p class="muted">Accès via nom_domaine/admin</p>
+      </div>
+
+      <div id="admin-view" style="display:none;">
+        <div class="admin-card admin-header">
+          <div>
+            <h2>Panneau d'administration</h2>
+            <p id="admin-email-display" class="muted"></p>
+          </div>
+          <div class="admin-actions">
+            <button id="logout-btn" class="admin-btn danger">Se déconnecter</button>
+          </div>
+        </div>
+
+        <div class="admin-card">
+          <h3>Modifier identifiants</h3>
+          <div style="display:grid; grid-template-columns: 1fr 1fr; gap: .75rem;">
+            <input id="new-email" type="email" class="admin-input" placeholder="Nouvel email" />
+            <input id="new-password" type="password" class="admin-input" placeholder="Nouveau mot de passe" />
+          </div>
+          <div style="margin-top: .75rem;">
+            <button id="save-creds" class="admin-btn secondary">Enregistrer les identifiants</button>
+          </div>
+        </div>
+
+        <div class="admin-card">
+          <h3>Produits</h3>
+          <div class="admin-actions" style="margin-bottom:.5rem;">
+            <button id="add-product" class="admin-btn secondary">Ajouter un produit</button>
+          </div>
+          <div id="products-admin" class="admin-grid"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="scripts/admin.js"></script>
+</body>
+</html>

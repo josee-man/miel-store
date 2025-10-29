@@ -1,0 +1,54 @@
+<svg width="400" height="500" xmlns="http://www.w3.org/2000/svg">
+  <!-- Pot de miel -->
+  <rect x="120" y="150" width="160" height="200" rx="20" fill="#e8a948" />
+  <ellipse cx="200" cy="150" rx="80" ry="20" fill="#e8a948" />
+  <ellipse cx="200" cy="350" rx="80" ry="20" fill="#e8a948" />
+  
+  <!-- Miel à l'intérieur -->
+  <rect x="130" y="160" width="140" height="180" rx="15" fill="#ffc107" />
+  <ellipse cx="200" cy="160" rx="70" ry="15" fill="#ffc107" />
+  
+  <!-- Étiquette -->
+  <rect x="140" y="200" width="120" height="100" rx="5" fill="white" />
+  
+  <!-- Texte sur l'étiquette -->
+  <text x="200" y="230" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold">MIEL DE</text>
+  <text x="200" y="260" font-family="Arial" font-size="20" text-anchor="middle" font-weight="bold">FLEURS</text>
+  <text x="200" y="285" font-family="Arial" font-size="12" text-anchor="middle">250g</text>
+  
+  <!-- Logo abeille -->
+  <circle cx="170" cy="215" r="10" fill="#f44336" />
+  <path d="M165,215 L175,215 M170,210 L170,220" stroke="black" stroke-width="2" />
+  <ellipse cx="160" cy="210" rx="5" ry="3" fill="transparent" stroke="black" />
+  <ellipse cx="180" cy="210" rx="5" ry="3" fill="transparent" stroke="black" />
+  
+  <!-- Couvercle -->
+  <ellipse cx="200" cy="150" rx="70" ry="15" fill="#d4d4d4" />
+  <rect x="130" y="135" width="140" height="15" fill="#d4d4d4" />
+  <ellipse cx="200" cy="135" rx="70" ry="15" fill="#d4d4d4" />
+  
+  <!-- Reflets -->
+  <ellipse cx="170" cy="180" rx="5" ry="15" fill="white" opacity="0.3" />
+  <ellipse cx="160" cy="240" rx="3" ry="10" fill="white" opacity="0.3" />
+  
+  <!-- Rayons de miel -->
+  <polygon points="300,250 320,230 340,250 320,270" fill="#ffc107" stroke="#e8a948" />
+  <polygon points="320,230 340,210 360,230 340,250" fill="#ffc107" stroke="#e8a948" />
+  <polygon points="340,250 360,230 380,250 360,270" fill="#ffc107" stroke="#e8a948" />
+  <polygon points="320,270 340,250 360,270 340,290" fill="#ffc107" stroke="#e8a948" />
+  
+  <!-- Fleurs de jasmin -->
+  <circle cx="100" cy="400" r="10" fill="white" />
+  <circle cx="110" cy="390" r="10" fill="white" />
+  <circle cx="90" cy="390" r="10" fill="white" />
+  <circle cx="110" cy="410" r="10" fill="white" />
+  <circle cx="90" cy="410" r="10" fill="white" />
+  <circle cx="100" cy="400" r="5" fill="#ffeb3b" />
+  
+  <circle cx="130" cy="420" r="10" fill="white" />
+  <circle cx="140" cy="410" r="10" fill="white" />
+  <circle cx="120" cy="410" r="10" fill="white" />
+  <circle cx="140" cy="430" r="10" fill="white" />
+  <circle cx="120" cy="430" r="10" fill="white" />
+  <circle cx="130" cy="420" r="5" fill="#ffeb3b" />
+</svg>

@@ -1,0 +1,86 @@
+[
+  {
+    "id": 1,
+    "name": {
+      "fr": "Miel de Thym",
+      "ar": "عسل الزعتر"
+    },
+    "price": "120 DH",
+    "image": "images/honey-pot.jpg",
+    "description": {
+      "fr": "Un miel aromatique aux notes florales et herbacées.",
+      "ar": "عسل عطري بنكهات زهرية وعشبية."
+    },
+    "origin": {
+      "fr": "Montagnes de l'Atlas, Maroc",
+      "ar": "جبال الأطلس، المغرب"
+    },
+    "properties": {
+      "fr": "Antiseptique, apaisant pour la gorge, renforce le système immunitaire",
+      "ar": "مطهر، يهدئ الحلق، يقوي المناعة"
+    }
+  },
+  {
+    "id": 2,
+    "name": {
+      "fr": "Miel d'Eucalyptus",
+      "ar": "عسل الكاليبتوس"
+    },
+    "price": "140 DH",
+    "image": "images/MIEL-DE-EUCALIPTO.webp",
+    "description": {
+      "fr": "Un miel riche aux notes boisées et mentholées.",
+      "ar": "عسل غني بنكهات خشبية ونعناعية."
+    },
+    "origin": {
+      "fr": "Forêts d'eucalyptus du Maroc",
+      "ar": "غابات الكاليبتوس بالمغرب"
+    },
+    "properties": {
+      "fr": "Propriétés expectorantes, soulage les voies respiratoires",
+      "ar": "يساعد على إخراج البلغم، يخفف مشاكل الجهاز التنفسي"
+    }
+  },
+  {
+    "id": 3,
+    "name": {
+      "fr": "Miel de Lavande",
+      "ar": "عسل الخزامى"
+    },
+    "price": "150 DH",
+    "image": "images/miel.webp",
+    "description": {
+      "fr": "Un miel délicat aux arômes floraux et légèrement épicés.",
+      "ar": "عسل رقيق بنكهات زهرية وتوابل خفيفة."
+    },
+    "origin": {
+      "fr": "Champs de lavande du Haut Atlas",
+      "ar": "حقول الخزامى في الأطلس العالي"
+    },
+    "properties": {
+      "fr": "Relaxant, favorise le sommeil, propriétés calmantes",
+      "ar": "مهدئ، يساعد على النوم، خصائص مريحة"
+    }
+  },
+  {
+    "id": 4,
+    "name": {
+      "fr": "test",
+      "ar": "عسل الزعتر1"
+    },
+    "price": "200 dh",
+    "image": "images/honey-pot.jpg",
+    "description": {
+      "fr": "test teest ",
+      "ar": "عسل عطري بنكهات زهرية وعشبية."
+    },
+    "origin": {
+      "fr": "",
+      "ar": ""
+    },
+    "properties": {
+      "fr": "",
+      "ar": ""
+    }
+  }
+]
