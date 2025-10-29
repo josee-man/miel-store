@@ -8,8 +8,8 @@ const PORT = process.env.PORT || 3000;
 // Parse JSON bodies
 app.use(express.json());
 
-// Serve static files
-app.use(express.static(path.join(__dirname, '/')));
+// Serve static files from project root (parent of backend)
+app.use(express.static(path.join(__dirname, '..')));
 
 // Data persistence setup
 const DATA_DIR = path.join(__dirname, 'data');
@@ -190,20 +190,20 @@ app.post('/api/contact', (req, res) => {
 
 // HTML routes
 app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, 'index.html'));
+  res.sendFile(path.join(__dirname, '..', 'index.html'));
 });
 
 app.get('/produits', (req, res) => {
-  res.sendFile(path.join(__dirname, 'produits.html'));
+  res.sendFile(path.join(__dirname, '..', 'produits.html'));
 });
 
 app.get('/about', (req, res) => {
-  res.sendFile(path.join(__dirname, 'about.html'));
+  res.sendFile(path.join(__dirname, '..', 'about.html'));
 });
 
 // Admin auth routes
 app.get('/admin', (req, res) => {
-  res.sendFile(path.join(__dirname, 'admin.html'));
+  res.sendFile(path.join(__dirname, '..', 'admin.html'));
 });
 
 app.post('/api/admin/login', (req, res) => {
